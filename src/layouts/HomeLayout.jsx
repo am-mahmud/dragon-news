@@ -16,14 +16,14 @@ const HomeLayout = () => {
             <nav className='w-11/12 mx-auto mt-2'>
                 <Navbar></Navbar>
             </nav>
-            <main>
-                <aside>
+            <main className='w-11/12 mx-auto mt-2 grid grid-cols-12'>
+                <aside className='col-span-3'>
                     <LeftAside></LeftAside>
                 </aside>
-                <section>
+                <section className='main col-span-6'>
                     <Outlet></Outlet>
                 </section>
-                <aside>
+                <aside className='col-span-3'>
                     <RightAside></RightAside>
                 </aside>
             </main>
